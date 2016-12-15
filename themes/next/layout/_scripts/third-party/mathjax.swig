@@ -1,6 +1,9 @@
 {% if theme.mathjax.enable && page.mathjax %} {# add "page.mathjax" by myself. For set toggle to mathjax.js in page #}
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
+      {% if page.mhchem %}  {# add "page.mhchem" by myself. For set toggle to mhchem.js in page #}
+        extensions: ["tex2jax.js", "[Contrib]/mhchem/mhchem.js"],
+      {% endif %}
       tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
         processEscapes: true,
