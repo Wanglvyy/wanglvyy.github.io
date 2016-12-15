@@ -1,4 +1,4 @@
-{% if theme.mathjax.enable %}
+{% if theme.mathjax.enable && page.mathjax %} {# add "page.mathjax" by myself. For set toggle to mathjax.js in page #}
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
