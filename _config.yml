@@ -83,5 +83,7 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo:
-    github: git@github.com:Wanglvyy/wanglvyy.github.io.git,master
+  repo: git@github.com:Wanglvyy/wanglvyy.github.io.git
+  branch: master
+  name: Wanglvyy
+  email: 673528484@qq.com
